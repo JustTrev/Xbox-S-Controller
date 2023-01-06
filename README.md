@@ -8,10 +8,15 @@ is a frontend user interface for Xb2Input with included requirements to support 
 
 The "Xbox OG Kit Installer" found inside the Zip File located in the assets below, will unpack all of Xb2Input requirements and install them for you with a progress and output tracker.
 
-### **XboxOG Kit Installer** 
-![image](https://user-images.githubusercontent.com/3674483/210187627-2dd9da28-2b58-4bd0-a7bc-4e5552a333cb.png)
+### **XboxOG Kit Installer**  
+![image](https://user-images.githubusercontent.com/3674483/210905484-945ad335-cf8e-4447-b369-3ebf63f652b3.png)
+
+![image](https://user-images.githubusercontent.com/3674483/210905497-f59e9281-c0ad-4de9-ad15-a63e356f36d1.png)
+
 ![image](https://user-images.githubusercontent.com/3674483/210187765-ccc7a658-bf9d-4b70-8d0f-e10988877857.png)
+
 ![image](https://user-images.githubusercontent.com/3674483/210187660-be033f11-4cd5-496f-a80e-e0ea6adefe4b.png) 
+
 ![image](https://user-images.githubusercontent.com/3674483/210187902-0106b8a1-419a-4919-bb3b-42920e78fb85.png)
 
 ### **XboxOG Kit**!
