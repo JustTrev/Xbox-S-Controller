@@ -26,7 +26,7 @@ The "Xbox OG Kit Installer" found inside the Zip File located in the assets belo
 -----
 Current Release Notes: 2.0
  
-** Notes:  Added**
+**Notes:  Added**
 
 • Detect controller and button presses from within Xbox OG Kit.
 • The installer will create a new registry key item for installation for future support to Xbox OG Kit and potentially the Xb2Input project (TBD) and uninstallation process.
