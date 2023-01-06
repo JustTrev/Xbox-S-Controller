@@ -24,15 +24,72 @@ The "Xbox OG Kit Installer" found inside the Zip File located in the assets belo
 
 
 -----
-Current Release Notes:
+Current Release Notes: 2.0
  
-Notes:
+** Notes:  Added**
+• Detect controller and button presses from within Xbox OG Kit.
+• The installer will create a new registry key item for installation for future support to Xbox OG Kit and potentially the Xb2Input project (TBD) and uninstallation process.
+
+• The setup will install all the necessary files and run them without much human intervention.
+
+• The Installer places shortcuts in the Start Menu after installing, so finding the Xbox OG Kit should be easy. (Now auto launches Xb2Input by default at Startup)
+
+• The settings drop down has been rearranged to properly configure other applications needs.
+
+• Background now uses the latest dashboard theme. (Soon to use a realtime 3D background with sound!).
+
+• You can edit the guide button mappings in order to use the guide menu.
+
+• You can enable or disable the controller vibration.
+
+• The Triggers and Stick Dead Zones can be tested.
+
+• Installer now has an Icon for easier support.
+
+• Added to Windows startup support.(you can find this in the Settings>Xb2Input dropdown.
+
+
+**Fixed:**
+• Fix installer to restart PC when checkbox is checked at the final stage of installation. (This is supposed to be working but it isn't. Manual restarts will be necessary after the installer has finished.)
+• Open Xb2Input when launching Xbox OG Kit, if it is not already running.  (Working)
+
+• Remove the guide button checkboxes and info key when "Enable Guide?" is disabled. (Working)
+
+
+• Windows 11 wont start the toolbar services (i.e No clock, speakers or anything) if a controller is plugged in upon after a reboot after logging in. Current work around is reboot and disconnect your controller until after login. (This seems to have gone away. Clear to proceed!!!)
+
+**To-Do:**
+• Swap buttons with Remap Controller enabled.
+
+• Run analog Driver Installer batch script in background to update the installer progressbar.
+
+• Look into installing ViGEmBus silently or without human intervention completely.
+
+• Update the background controller image to show the right connected controller, based on it's serial number. (such as racing wheel, or madcatz wireless controllers, etc.)
+
+• Detect the Xbox Communicator and it's serial number for full headset support and Xbox Original style voice changer. (might need to make a sound device driver for this to happen much like the controllers).
+
+• Add an Uninstaller for Xbox OG Kit to remove all of it's contents.
+
+**Known Bugs:**
+
+• Other controller accessories such as the headset communicator, might cause Xb2Input from being able to detect your controller. (Work around - Disconnect controller and remove accessories before reconnecting your controller into your PC. Let Xb2Input detect your controller first before plugging in any accessory into the controller.)
+ 
+ 
+ 
+**Download Zip file below:** _Other assets are Xb2InputV1.5c_
+
+
+
+**
+Past Release:**
+Notes: v1.0
 
 • The installer will create a new registry key item for installation for future support to Xbox OG Kit and potentially the Xb2Input project (TBD). 
 
 • The setup will install all the necessary files and run them without much human intervention.
 
-• The Installer places shortcuts in the Start Menu after installing, so finding the Xbox OG Kit should be easy. 
+• The Installer places shortcuts in the Start Menu after installing, so finding the Xbox OG Kit should be easy. (Now auto launches Xb2Input by default at Startup) 
 
 • You can launch Xb2Input from the Settings dropdown menu within the Xbox OG Kit.
 
@@ -83,10 +140,3 @@ Known Bugs:
 • Windows 11 wont start the toolbar services (i.e No clock, speakers or anything) if a controller is plugged in upon after a reboot after logging in. Current work around is reboot and disconnect your controller until after login. (This issue is Not present in Windows 10 at this time .) 
 
 -----
-
-
-**All Credits belong to:**
-https://github.com/ViGEm/ViGEmBus/releases
-https://github.com/emoose/Xb2XInput
-
-**Download Zip file below:** _Other assets are Xb2InputV1.5c_
