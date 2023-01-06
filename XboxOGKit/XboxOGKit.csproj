@@ -1,0 +1,150 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>xbox.ico</ApplicationIcon>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Title>Xbox Original Controller Kit</Title>
+    <Description>This tool provides quick access to the Original Xbox Controller button presses and layouts with additional features and settings.</Description>
+    <Copyright>Creative Commons License 2022</Copyright>
+    <IncludeSymbols>False</IncludeSymbols>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <PackageProjectUrl>https://github.com/JustTrev/Xb2XInput/releases/tag/Xb2Input</PackageProjectUrl>
+    <PackageIcon>Controller.png</PackageIcon>
+    <PackAsTool>True</PackAsTool>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <FileVersion>2.0.0.0</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Button A.png" />
+    <None Remove="Resources\Button B.png" />
+    <None Remove="Resources\Button Back XONE.png" />
+    <None Remove="Resources\Button Start XONE.png" />
+    <None Remove="Resources\Button X.png" />
+    <None Remove="Resources\Button Y.png" />
+    <None Remove="Resources\Controller.png" />
+    <None Remove="Resources\Controller1.png" />
+    <None Remove="Resources\GuideIcon.png" />
+    <None Remove="Resources\LBumper.png" />
+    <None Remove="Resources\LStick.png" />
+    <None Remove="Resources\LStickClick.png" />
+    <None Remove="Resources\LTrigger.png" />
+    <None Remove="Resources\NewBG.png" />
+    <None Remove="Resources\RBumper.png" />
+    <None Remove="Resources\RStick.png" />
+    <None Remove="Resources\RStickClick.png" />
+    <None Remove="Resources\RTrigger.png" />
+    <None Remove="Resources\x360Back.png" />
+    <None Remove="Resources\x360Start.png" />
+    <None Remove="Resources\Xbox and Contrller.png" />
+    <None Remove="Resources\Xbox and Contrller1.png" />
+    <None Remove="Resources\Xbox Controller Custom Layout3.png" />
+    <None Remove="Resources\xbox.ico" />
+    <None Remove="Resources\Xbox.png" />
+    <None Remove="Resources\Xbox1.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="xbox.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <SourceGeneratorInput Remove="AssemblyInfo1.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <COMReference Include="IWshRuntimeLibrary">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>f935dc20-1cf0-11d0-adb9-00c04fd58a0b</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Button A.png" />
+    <EmbeddedResource Include="Resources\Button B.png" />
+    <EmbeddedResource Include="Resources\Button Back XONE.png" />
+    <EmbeddedResource Include="Resources\Button Start XONE.png" />
+    <EmbeddedResource Include="Resources\Button X.png" />
+    <EmbeddedResource Include="Resources\Button Y.png" />
+    <EmbeddedResource Include="Resources\Controller.png" />
+    <EmbeddedResource Include="Resources\Controller1.png" />
+    <EmbeddedResource Include="Resources\GuideIcon.png" />
+    <EmbeddedResource Include="Resources\LBumper.png" />
+    <EmbeddedResource Include="Resources\LStick.png" />
+    <EmbeddedResource Include="Resources\LStickClick.png" />
+    <EmbeddedResource Include="Resources\LTrigger.png" />
+    <EmbeddedResource Include="Resources\NewBG.png" />
+    <EmbeddedResource Include="Resources\RBumper.png" />
+    <EmbeddedResource Include="Resources\RStick.png" />
+    <EmbeddedResource Include="Resources\RStickClick.png" />
+    <EmbeddedResource Include="Resources\RTrigger.png" />
+    <EmbeddedResource Include="Resources\x360Back.png" />
+    <EmbeddedResource Include="Resources\x360Start.png" />
+    <EmbeddedResource Include="Resources\Xbox and Contrller.png" />
+    <EmbeddedResource Include="Resources\Xbox and Contrller1.png" />
+    <EmbeddedResource Include="Resources\Xbox Controller Custom Layout3.png" />
+    <EmbeddedResource Include="Resources\xbox.ico" />
+    <EmbeddedResource Include="Resources\Xbox.png" />
+    <EmbeddedResource Include="Resources\Xbox1.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\Pictures\Xbox 2 Input\Controller.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.OLE.Interop" Version="17.4.33103.184" />
+    <PackageReference Include="OpenTK" Version="5.0.0-pre.8" />
+    <PackageReference Include="PInvoke.Windows.Core" Version="0.7.124" />
+    <PackageReference Include="SharpDX.RawInput" Version="4.2.0" />
+    <PackageReference Include="SharpDX.XInput" Version="4.2.0" />
+    <PackageReference Include="System.Management" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Xbox S Controller\XboxOG Kit Installer.csproj" />
+  </ItemGroup>
+ 
+
+</Project>

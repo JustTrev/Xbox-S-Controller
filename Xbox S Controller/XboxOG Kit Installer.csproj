@@ -1,0 +1,190 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>Xbox_S_Controller</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <PackageId>$(AssemblyName)</PackageId>
+    <Title>XboxOGKit Installer</Title>
+    <Platforms>AnyCPU;x64</Platforms>
+    <ApplicationIcon>xbox.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Remove="Form2.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Controller Installer Shield Design.png" />
+    <None Remove="Resources\Dash plus Controller Installer Shield Design.png" />
+    <None Remove="Resources\Dashboard Installer Shield Design.png" />
+    <None Remove="Resources\DeltaCompressionDotNet.dll" />
+    <None Remove="Resources\DeltaCompressionDotNet.MsDelta.dll" />
+    <None Remove="Resources\DeltaCompressionDotNet.PatchApi.dll" />
+    <None Remove="Resources\install drivers.bat" />
+    <None Remove="Resources\libusb-1.0.dll" />
+    <None Remove="Resources\Microsoft.VisualStudio.Interop.dll" />
+    <None Remove="Resources\Microsoft.VisualStudio.OLE.Interop.dll" />
+    <None Remove="Resources\Mono.Cecil.dll" />
+    <None Remove="Resources\Mono.Cecil.Mdb.dll" />
+    <None Remove="Resources\Mono.Cecil.Pdb.dll" />
+    <None Remove="Resources\Mono.Cecil.Rocks.dll" />
+    <None Remove="Resources\OpenTK.Compute.dll" />
+    <None Remove="Resources\OpenTK.Core.dll" />
+    <None Remove="Resources\OpenTK.Graphics.dll" />
+    <None Remove="Resources\OpenTK.Input.dll" />
+    <None Remove="Resources\OpenTK.Mathematics.dll" />
+    <None Remove="Resources\OpenTK.OpenAL.dll" />
+    <None Remove="Resources\OpenTK.Windowing.Common.dll" />
+    <None Remove="Resources\OpenTK.Windowing.Desktop.dll" />
+    <None Remove="Resources\OpenTK.Windowing.GraphicsLibraryFramework.dll" />
+    <None Remove="Resources\PInvoke.Windows.Core.dll" />
+    <None Remove="Resources\README.md" />
+    <None Remove="Resources\SharpCompress.dll" />
+    <None Remove="Resources\SharpDX.dll" />
+    <None Remove="Resources\SharpDX.RawInput.dll" />
+    <None Remove="Resources\SharpDX.XInput.dll" />
+    <None Remove="Resources\System.CodeDom.dll" />
+    <None Remove="Resources\System.Management.dll" />
+    <None Remove="Resources\ViGEmBus_1.21.442_x64_x86_arm64.exe" />
+    <None Remove="Resources\wdi-simple.exe" />
+    <None Remove="Resources\Xb2XInput.exe" />
+    <None Remove="Resources\Xb2XInput.ini" />
+    <None Remove="Resources\Xbox and Contrller.png" />
+    <None Remove="Resources\XboxOGKit.deps.json" />
+    <None Remove="Resources\XboxOGKit.dll" />
+    <None Remove="Resources\XboxOGKit.dll.config" />
+    <None Remove="Resources\XboxOGKit.exe" />
+    <None Remove="Resources\XboxOGKit.pdb" />
+    <None Remove="Resources\XboxOGKit.runtimeconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <COMReference Include="IWshRuntimeLibrary">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>f935dc20-1cf0-11d0-adb9-00c04fd58a0b</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="xbox.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Controller Installer Shield Design.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Dash plus Controller Installer Shield Design.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Dashboard Installer Shield Design.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\DeltaCompressionDotNet.dll" />
+    <EmbeddedResource Include="Resources\DeltaCompressionDotNet.MsDelta.dll" />
+    <EmbeddedResource Include="Resources\DeltaCompressionDotNet.PatchApi.dll" />
+    <EmbeddedResource Include="Resources\install drivers.bat">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\libusb-1.0.dll">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Microsoft.VisualStudio.Interop.dll" />
+    <EmbeddedResource Include="Resources\Microsoft.VisualStudio.OLE.Interop.dll" />
+    <EmbeddedResource Include="Resources\Mono.Cecil.dll" />
+    <EmbeddedResource Include="Resources\Mono.Cecil.Mdb.dll" />
+    <EmbeddedResource Include="Resources\Mono.Cecil.Pdb.dll" />
+    <EmbeddedResource Include="Resources\Mono.Cecil.Rocks.dll" />
+    <EmbeddedResource Include="Resources\OpenTK.Compute.dll" />
+    <EmbeddedResource Include="Resources\OpenTK.Core.dll" />
+    <EmbeddedResource Include="Resources\OpenTK.Graphics.dll" />
+    <EmbeddedResource Include="Resources\OpenTK.Input.dll" />
+    <EmbeddedResource Include="Resources\OpenTK.Mathematics.dll" />
+    <EmbeddedResource Include="Resources\OpenTK.OpenAL.dll" />
+    <EmbeddedResource Include="Resources\OpenTK.Windowing.Common.dll" />
+    <EmbeddedResource Include="Resources\OpenTK.Windowing.Desktop.dll" />
+    <EmbeddedResource Include="Resources\OpenTK.Windowing.GraphicsLibraryFramework.dll" />
+    <EmbeddedResource Include="Resources\PInvoke.Windows.Core.dll" />
+    <EmbeddedResource Include="Resources\README.md">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SharpCompress.dll" />
+    <EmbeddedResource Include="Resources\SharpDX.dll" />
+    <EmbeddedResource Include="Resources\SharpDX.RawInput.dll" />
+    <EmbeddedResource Include="Resources\SharpDX.XInput.dll" />
+    <EmbeddedResource Include="Resources\System.CodeDom.dll" />
+    <EmbeddedResource Include="Resources\System.Management.dll" />
+    <EmbeddedResource Include="Resources\ViGEmBus_1.21.442_x64_x86_arm64.exe">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\wdi-simple.exe">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Xb2XInput.exe">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Xb2XInput.ini">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Xbox and Contrller.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\XboxOGKit.deps.json" />
+    <EmbeddedResource Include="Resources\XboxOGKit.dll" />
+    <EmbeddedResource Include="Resources\XboxOGKit.dll.config" />
+    <EmbeddedResource Include="Resources\XboxOGKit.exe" />
+    <EmbeddedResource Include="Resources\XboxOGKit.pdb" />
+    <EmbeddedResource Include="Resources\XboxOGKit.runtimeconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="squirrel.windows" Version="2.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Update="Resource1.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>
