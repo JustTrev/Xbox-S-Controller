@@ -27,6 +27,7 @@ The "Xbox OG Kit Installer" found inside the Zip File located in the assets belo
 Current Release Notes: 2.0
  
 ** Notes:  Added**
+
 • Detect controller and button presses from within Xbox OG Kit.
 • The installer will create a new registry key item for installation for future support to Xbox OG Kit and potentially the Xb2Input project (TBD) and uninstallation process.
 
@@ -50,6 +51,7 @@ Current Release Notes: 2.0
 
 
 **Fixed:**
+
 • Fix installer to restart PC when checkbox is checked at the final stage of installation. (This is supposed to be working but it isn't. Manual restarts will be necessary after the installer has finished.)
 • Open Xb2Input when launching Xbox OG Kit, if it is not already running.  (Working)
 
@@ -59,6 +61,7 @@ Current Release Notes: 2.0
 • Windows 11 wont start the toolbar services (i.e No clock, speakers or anything) if a controller is plugged in upon after a reboot after logging in. Current work around is reboot and disconnect your controller until after login. (This seems to have gone away. Clear to proceed!!!)
 
 **To-Do:**
+
 • Swap buttons with Remap Controller enabled.
 
 • Run analog Driver Installer batch script in background to update the installer progressbar.
