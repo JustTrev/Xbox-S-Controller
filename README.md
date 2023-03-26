@@ -18,8 +18,6 @@ The "Xbox OG Kit Installer" found inside the Zip File located in the assets belo
 
 ![image](https://user-images.githubusercontent.com/3674483/210187660-be033f11-4cd5-496f-a80e-e0ea6adefe4b.png) 
 
-![image](https://user-images.githubusercontent.com/3674483/210187902-0106b8a1-419a-4919-bb3b-42920e78fb85.png)
-
 ### **XboxOG Kit**!
 ![image](https://user-images.githubusercontent.com/3674483/210905317-0e64ca40-4fc7-4a8d-9db3-bb4ea9821860.png)
 
