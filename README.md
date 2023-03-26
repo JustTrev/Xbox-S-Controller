@@ -81,8 +81,4 @@ Current Release Notes: 2.0
 **Download Zip file below:** _Other assets are Xb2InputV1.5c_
 
 
-------
-
-**Past Release:**
-Notes: v1.0
-
+------ 
