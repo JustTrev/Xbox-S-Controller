@@ -1,7 +1,7 @@
 # Xbox-S-Controller
 The Xbox OG Kit 
 
-NEWS*: 2.0 COMING SOON!!!
+NEWS*: 3.0 COMING SOON!!!
 
 
 ### **Xbox OG Kit**  
