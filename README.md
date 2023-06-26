@@ -1,65 +1,80 @@
 # Xbox-S-Controller
 The Xbox OG Kit 
 
-NEWS*: 3.0 COMING SOON!!!
-
 
 ### **Xbox OG Kit**  
-is a frontend user interface for Xb2Input with included requirements to support Xb2Input.
+is a frontend user interface that allows users to customize their OG XBox controller inputs used with Xb2Input with included requirements in order to get it working properly on Windows 10, or 11.
 
-The "Xbox OG Kit Installer" found inside the Zip File located in the assets below, will unpack all of Xb2Input requirements and install them for you with a progress and output tracker.
+The "Xbox OG Kit Installer" will unpack all of requirements necessary to run.  It's a custom built script output from the installers that are used for Xb2Input.
 
 ### **XboxOG Kit Installer**  
-![image](https://user-images.githubusercontent.com/3674483/227811549-a97ff5d4-13f4-45f2-8b72-e56cc7a741a9.png)
-
 ![image](https://user-images.githubusercontent.com/3674483/210905484-945ad335-cf8e-4447-b369-3ebf63f652b3.png)
 
 ![image](https://user-images.githubusercontent.com/3674483/210187765-ccc7a658-bf9d-4b70-8d0f-e10988877857.png)
 
+![image](https://user-images.githubusercontent.com/3674483/210187660-be033f11-4cd5-496f-a80e-e0ea6adefe4b.png) 
+
+![image](https://user-images.githubusercontent.com/3674483/210187902-0106b8a1-419a-4919-bb3b-42920e78fb85.png)
 
 ### **XboxOG Kit**!
-![image](https://user-images.githubusercontent.com/3674483/210905317-0e64ca40-4fc7-4a8d-9db3-bb4ea9821860.png)
+![v3XboxOGKit](https://github.com/JustTrev/Xbox-S-Controller/assets/3674483/4e723039-d977-4567-a277-7a713934770f)
+![image](https://github.com/JustTrev/Xbox-S-Controller/assets/3674483/162f7dd2-96d9-486d-b53b-ee5b00b21693)
+![WorkingKeyboard](https://github.com/JustTrev/Xbox-S-Controller/assets/3674483/3d5bbb9a-50ec-482c-88fd-73e265dfac36)
+
 
 
 -----
-Current Release Notes: 2.0
+
+### Latest Release Notes: 3.0
  
-**Notes:  Added**
 
-• Detect controller and button presses from within Xbox OG Kit.
-• The installer will create a new registry key item for installation for future support to Xbox OG Kit and potentially the Xb2Input project (TBD) and uninstallation process.
+### **Notes:**  
+**Added**
+• Updated the menu strip layout and mechanics.
 
-• The setup will install all the necessary files and run them without much human intervention.
+• Updated Streamer Mode. Clicking the XBOX Logo will change the controller wizard into a streamer friendly overlay.
 
-• The Installer places shortcuts in the Start Menu after installing, so finding the Xbox OG Kit should be easy. (Now auto launches Xb2Input by default at Startup)
+• Updated Player name banner to retrieve names directly from GitHub as an interactive preset name list database. 
 
-• The settings drop down has been rearranged to properly configure other applications needs.
+• Updated button positions work with Streaming Mode.
 
-• Background now uses the latest dashboard theme. (Soon to use a realtime 3D background with sound!).
+• Changed the Trigger color range based on pressure. 
 
-• You can edit the guide button mappings in order to use the guide menu.
+• Added On-Screen Keyboard.
 
-• You can enable or disable the controller vibration.
+• Added support for Xbox Guide in Windows.
 
-• The Triggers and Stick Dead Zones can be tested.
+• Updated Steam Guide OK button position to not interfere with image.
 
-• Installer now has an Icon for easier support.
+• Added Top Most toggle.
 
-• Added to Windows startup support.(you can find this in the Settings>Xb2Input dropdown.
+• Added Minimize to Sys Tray before closing dialog.
 
-
-**Fixed:**
-
-• Fix installer to restart PC when checkbox is checked at the final stage of installation. (This is supposed to be working but it isn't. Manual restarts will be necessary after the installer has finished.)
-• Open Xb2Input when launching Xbox OG Kit, if it is not already running.  (Working)
-
-• Remove the guide button checkboxes and info key when "Enable Guide?" is disabled. (Working)
+• Updated File in menu strip to Start.
 
 
-• Windows 11 wont start the toolbar services (i.e No clock, speakers or anything) if a controller is plugged in upon after a reboot after logging in. Current work around is reboot and disconnect your controller until after login. (This seems to have gone away. Clear to proceed!!!)
+
+**Fixed**
+
+• Minimize to Sys Tray now saves in configuration once clicked.
+
+• Controller Configuration Settings now located under Controller instead of System.
+
+• .NET Framework 7 is now required in order to run. (Package may need to be downloaded from Microsoft.)
+
+
+
+**Removed**
+
+• Apply & Save under File. (Which is now named Start).
+
+
+
+
+
+-----
 
 **To-Do:**
-
 • Swap buttons with Remap Controller enabled.
 
 • Run analog Driver Installer batch script in background to update the installer progressbar.
@@ -78,7 +93,13 @@ Current Release Notes: 2.0
  
  
  
-**Download Zip file below:** _Other assets are Xb2InputV1.5c_
+**[Download](https://github.com/JustTrev/Xbox-S-Controller/releases/download/XboxController/XboxOGKitInstaller.exe)** the XboxOG Kit Installer v3:
+_https://github.com/JustTrev/Xbox-S-Controller/releases/download/XboxController/XboxOGKitInstaller.exe_
 
+**Download the portable version:**
+[https://github.com/JustTrev/Xbox-S-Controller/releases/download/XboxController/XboxOGSystem.zip](https://github.com/JustTrev/Xbox-S-Controller/releases/download/XboxController/XboxOGSystem.zip)
 
------- 
+_This is a standard Windows .zip file that contains an executable to install XboxOGKit and Xb2Input onto your system._
+__
+
+-----
