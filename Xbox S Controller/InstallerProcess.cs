@@ -14,11 +14,13 @@ namespace Xbox_S_Controller
         static extern bool ExitWindowsEx(uint uFlags, uint dwReason);
 
 
-        public const string AppTitle = "Xbox OG Kit";
+        public const string AppTitle = "Xbox OG System"; // This you can have spaces in between // 
         public const string AppFinishMessage = "Your installation has completed successfully.\r\n\r\nClick Finish to exit.";
-        public const string AppDescrip = "This setup will guide you through installing Xbox OG Kit.\r\n\r\nIt is recommended that you close all other applications before starting, including Xbox OG Kit. This will help make it possible to update relevent files. A reboot is required after installation.\r\n\r\nClick Next to continue.\r\n";
+        public const string AppDescrip = $"This setup is designed to guide you through installing the {AppTitle} controller application.\r\n\r\nIt is recommended that you close 'XboxOGKit' and all other applications before starting, including Xb2XInput. This will help make it possible to update relevent files. Please follow any on screen installation wizard if necessary.\r\n\r\nA reboot may be required after installation.\r\n\r\nClick Next to continue.\r\n";
 
-         
+
+
+
 
         public InstallerProcess()
         {
@@ -51,7 +53,7 @@ namespace Xbox_S_Controller
         public void brains(int delta)
         {
 
-           //  var abc;
+            //  var abc;
 
             switch (delta)
             {
@@ -155,9 +157,10 @@ namespace Xbox_S_Controller
                         label13.Text += $"{Environment.NewLine}  ";
                         Refresh();
 
-                        if(!Directory.Exists(txtFolderDestination.Text + @"\runtimes\win\lib\net6.0"))
+                        if (!Directory.Exists(txtFolderDestination.Text + @"\runtimes\win\lib\net6.0"))
                         {
                             Directory.CreateDirectory(txtFolderDestination.Text + @"\runtimes\win\lib\net6.0");
+                            label13.Text += $"{Environment.NewLine}  Creating Directory: {txtFolderDestination.Text}\\XboxOGKit.runtimeconfig.json";
 
                         }
 
@@ -320,7 +323,7 @@ namespace Xbox_S_Controller
 
                         }
 
-                        label13.Text += $"{Environment.NewLine}  Copying file: {txtFolderDestination.Text}\\Drivers\\install drivers.bat"; 
+                        label13.Text += $"{Environment.NewLine}  Copying file: {txtFolderDestination.Text}\\Drivers\\install drivers.bat";
 
                         if (!File.Exists(txtFolderDestination.Text + @"\Xb2XInput1_5c\README.md"))
                         {
@@ -449,10 +452,10 @@ namespace Xbox_S_Controller
                         label13.Text += $"{Environment.NewLine} Installing ViGEmBus v1.21.442";
 
                         ProcessStartInfo ViGEmBus_1 = new ProcessStartInfo();
-                       
-                         ViGEmBus_1.WorkingDirectory = txtFolderDestination.Text + @"\Drivers\";
-                         ViGEmBus_1.FileName = @"ViGEmBus_1.21.442_x64_x86_arm64.exe"; 
-                         ViGEmBus_1.UseShellExecute = true;
+
+                        ViGEmBus_1.WorkingDirectory = txtFolderDestination.Text + @"\Drivers\";
+                        ViGEmBus_1.FileName = @"ViGEmBus_1.21.442_x64_x86_arm64.exe";
+                        ViGEmBus_1.UseShellExecute = true;
 
 
                         using (Process myProcess = Process.Start(ViGEmBus_1))
@@ -461,10 +464,10 @@ namespace Xbox_S_Controller
                             while (!myProcess.HasExited)
                             {
                                 // Discard cached information about the process.
-                                    myProcess.Refresh();
+                                myProcess.Refresh();
 
                                 Thread.Sleep(1000);
-                            } 
+                            }
                         }
                         progressBar1.Value = 90;
                         label13.Text += $"{Environment.NewLine} Done.";
@@ -504,9 +507,11 @@ namespace Xbox_S_Controller
                             btnBack.Enabled = false;
                         }
 
-                        brains(ClickCounter); 
+                        brains(ClickCounter);
 
-                    } catch (Exception ex) { 
+                    }
+                    catch (Exception ex)
+                    {
                         MessageBox.Show(ex.Message);
 
                         label13.Text += $"{Environment.NewLine}  Finished with an error. Aborting.";
@@ -518,15 +523,20 @@ namespace Xbox_S_Controller
 
                 case 4:  // Install Complete //
 
-                    lblTitle.Text = $"The {AppTitle} Installer Has Finished.";
+                    lblTitle.Text = $"The {AppTitle} Installer.";
                     lblDescription.Text = AppFinishMessage;
+
+                    // Open Page //
+                    pictureBox1.Enabled = true;
+                    pictureBox1.Visible = true;
+                    pictureBox1.BringToFront();// = true;
+
 
                     // Show page contents. //
                     panel1.Visible = true;
                     panel1.Enabled = true;
-                    pictureBox1.Enabled = true;
-                    pictureBox1.Visible = true;
-                    pictureBox1.BringToFront();// = true;
+                    panel1.BringToFront();
+
 
                     pLicenseAgreement.Visible = true;
                     pLicenseAgreement.Enabled = true;
@@ -541,9 +551,9 @@ namespace Xbox_S_Controller
                     btnFinish.Enabled = true;
 
                     cbxDontQuit.Enabled = true;
-                    cbxDontQuit.Visible= true;
+                    cbxDontQuit.Visible = true;
 
-                    
+
 
                     cbxDontQuit.BringToFront();//  = false; 
 
@@ -552,7 +562,7 @@ namespace Xbox_S_Controller
                     {
 
                         // The path to the target executable
-                        string targetPath = txtFolderDestination.Text + @"\XboxOGKit.exe"; 
+                        string targetPath = txtFolderDestination.Text + @"\XboxOGKit.exe";
 
                         // The path to the start menu
                         string startMenuFolder = Environment.GetFolderPath(Environment.SpecialFolder.StartMenu);
@@ -570,11 +580,12 @@ namespace Xbox_S_Controller
                         shortcut.Save();
                         shortcut1.Save();
                         shortcut2.Save();
-                    } catch
-                    {
-                         
                     }
-                    
+                    catch
+                    {
+
+                    }
+
 
                     break;
 
@@ -632,7 +643,7 @@ namespace Xbox_S_Controller
                     cbxDontQuit.Visible = false;
                     break;
             }
-        } 
+        }
 
         private void InstallerProcess_Load(object sender, EventArgs e)
         {
@@ -641,7 +652,7 @@ namespace Xbox_S_Controller
             brains(ClickCounter);
 
             checkMakup();
-             
+
 
         }
 
@@ -652,10 +663,11 @@ namespace Xbox_S_Controller
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            if (ClickCounter != 0) {
+            if (ClickCounter != 0)
+            {
                 ClickCounter--;
                 brains(ClickCounter);
-            }  
+            }
         }
         private static string FormatBytes(long bytes)
         {
@@ -676,7 +688,7 @@ namespace Xbox_S_Controller
             {
                 // List available drive letters //
                 string[] driveList = { @"A:\", @"B:\", @"C:\", @"D:\", @"E:\", @"F:\", @"G:\", @"H:\", @"I:\", @"J:\", @"K:\", @"L:\", @"M:\", @"N:\", @"O:\", @"P:\", @"Q:\", @"R:\", @"S:\", @"T:\", @"U:\", @"V:\", @"W:\", @"X:\", @"Y:\", @"Z:\", @"a:\", @"b:\", @"c:\", @"d:\", @"e:\", @"f:\", @"g:\", @"h:\", @"i:\", @"j:\", @"k:\", @"l:\", @"m:\", @"n:\", @"o:\", @"p:\", @"q:\", @"r:\", @"s:\", @"t:\", @"u:\", @"v:\", @"w:\", @"x:\", @"y:\", @"z:\" };
-                
+
                 // Scan for drives and store the choosen path in memory //
                 foreach (DriveInfo drive in DriveInfo.GetDrives())
                 {
@@ -689,23 +701,23 @@ namespace Xbox_S_Controller
                     {
                         // Drive Detection in text //
                         if (txtFolderDestination.Text.Contains(driveName))
-                        {                              
+                        {
                             if (drive.Name == driveName)
                             {
                                 lbl_DriveSpaceAvail.Text = $"Space available: {FormatBytes((drive.AvailableFreeSpace))}";
-                            }  
-                        }  
-                    }                   
-                } 
+                            }
+                        }
+                    }
+                }
             }
             catch
             {
                 // Do nothing.
-            } 
+            }
             finally
             {
                 // Clean up our garbage after each use.s
-                GC.Collect(); 
+                GC.Collect();
             }
         }
 
@@ -717,7 +729,8 @@ namespace Xbox_S_Controller
             if (txtFolderDestination.Text == "")
             {
                 btnNext.Enabled = false;
-            } else
+            }
+            else
             {
                 btnNext.Enabled = true;
             }
@@ -765,10 +778,10 @@ namespace Xbox_S_Controller
 
             brains(ClickCounter);
 
-             
+
 
         }
-         
+
         private void btnFinish_Click(object sender, EventArgs e)
         {
             try
@@ -787,23 +800,83 @@ namespace Xbox_S_Controller
 
                     Close();
 
-                } 
-            } catch
+                }
+            }
+            catch
             {
                 Close();
-            } 
+            }
         }
 
         private void label13_TextChanged(object sender, EventArgs e)
         {
             label13.SelectionStart = label13.TextLength;
-            label13.ScrollToCaret(); 
+            label13.ScrollToCaret();
         }
 
         public bool ccbxDontQuit;
         private void cbxDontQuit_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Paint(object sender, PaintEventArgs e)
+        {
+            // // Get the location of each label relative to the PictureBox control
+            // Point label1Location = panel1.PointToScreen(lblTitle.Location);
+            // Point label2Location = panel1.PointToScreen(lblDescription.Location);
+            // label1Location = pictureBox1.PointToClient(label1Location);
+            // label2Location = pictureBox1.PointToClient(label2Location);
+            //
+            // // Calculate the location of each label relative to the image in the PictureBox control
+            // int label1ImageX = label1Location.X - panel1.Location.X;
+            // int label1ImageY = label1Location.Y - panel1.Location.Y;
+            // int label2ImageX = label2Location.X - panel1.Location.X;
+            // int label2ImageY = label2Location.Y - panel1.Location.Y;
+            //
+            // // Get the color of the pixel at the calculated location in the image of the PictureBox control for each label
+            // Bitmap bmp = (Bitmap)pictureBox1.Image;
+            // Color label1PixelColor = bmp.GetPixel(label1ImageX, label1ImageY);
+            // Color label2PixelColor = bmp.GetPixel(label2ImageX, label2ImageY);
+            //
+            // // Calculate the brightness of each color
+            // double label1Brightness = label1PixelColor.R * 0.299 + label1PixelColor.G * 0.587 + label1PixelColor.B * 0.114;
+            // double label2Brightness = label2PixelColor.R * 0.299 + label2PixelColor.G * 0.587 + label2PixelColor.B * 0.114;
+            //
+            // // Set the foreground color of each label based on the brightness
+            // if (label1Brightness > 128)
+            // {
+            //     lblTitle.ForeColor = Color.Black;
+            // }
+            // else
+            // {
+            //     lblTitle.ForeColor = Color.White;
+            // }
+            //
+            // if (label2Brightness > 128)
+            // {
+            //     lblDescription.ForeColor = Color.Black;
+            // }
+            // else
+            // {
+            //     lblDescription.ForeColor = Color.White;
+            // }
+            //// lblTitle.BackColor= Color.Transparent;
+            //// lblDescription.BackColor= Color.Transparent;
+
+
+
+        }
+
+        private void btnSwitchToBeta_Click(object sender, EventArgs e)
+        {
+            NewInstaller frmNewInstaller = new NewInstaller();
+            frmNewInstaller.ShowDialog();
         }
     }
 }

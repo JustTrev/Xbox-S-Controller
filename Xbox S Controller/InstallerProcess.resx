@@ -58,24 +58,14 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="lblDescription.Text" xml:space="preserve">
-    <value>This setup will guide you through installing Xbox OG Kit.
+    <value>This setup will guide you through installing the Xbox OG controller support application.
 
-It is recommended that you close all other applications before starting, including Xb2Input. This will make it possible to update relevent files.
+It is recommended that you close XboxOGKit and all other applications before starting, including Xb2XInput. This will make it possible to update relevent files. Please follow any on screen installation wizard if necessary.
 
 
-A reboot will be necessary after installation has finished.
+A reboot may be required after installation.
 
 Click Next to continue.</value>
-  </data>
-  <data name="textBox2.Text" xml:space="preserve">
-    <value>Xbox, Xbox 360, Xbox One and Xbox Controllers are owned by © Microsoft Corporation. Xbox OG Kit is NOT endorsed  by  or  affiliated  with Microsoft or any of their assets. 
-https://www.xbox.com/en-US/developers/rules 
-
-•All assets are NOT reverse engineered to access the assets or otherwise do things that the Entity doesn't normally permit in order to create these assets. 
-•WE  DO  NOT  COLLECT  ANY  DATA  AND  IS  NOT  PERMITTED  WITHIN  THE  CONFINES  OF  THIS  APPLICATION.
-•Xbox OG kit uses xInput.dll to detect controllers that Xb2Input needs inorder to translate analog gamepads as digital controllers for Windows. (i.e.Xbox 360 Controller)
-
-By clicking Next,  you agree to all the licenses and Terms of Conditions from within the confines of this installer.</value>
   </data>
   <data name="textBox1.Text" xml:space="preserve">
     <value>GNU GENERAL PUBLIC LICENSE Version 2, June 1991

@@ -2,16 +2,18 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0-windows</TargetFramework>
+    <TargetFramework>net7.0-windows</TargetFramework>
     <RootNamespace>Xbox_S_Controller</RootNamespace>
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <PackageId>$(AssemblyName)</PackageId>
-    <Title>XboxOGKit Installer</Title>
+    <Title>Xbox Controller S Installer</Title>
     <Platforms>AnyCPU;x64</Platforms>
     <ApplicationIcon>xbox.ico</ApplicationIcon>
+    <AnalysisLevel>latest-recommended</AnalysisLevel>
+    <Copyright>CC</Copyright>
   </PropertyGroup>
 
   <ItemGroup>
@@ -55,12 +57,6 @@
     <None Remove="Resources\Xb2XInput.exe" />
     <None Remove="Resources\Xb2XInput.ini" />
     <None Remove="Resources\Xbox and Contrller.png" />
-    <None Remove="Resources\XboxOGKit.deps.json" />
-    <None Remove="Resources\XboxOGKit.dll" />
-    <None Remove="Resources\XboxOGKit.dll.config" />
-    <None Remove="Resources\XboxOGKit.exe" />
-    <None Remove="Resources\XboxOGKit.pdb" />
-    <None Remove="Resources\XboxOGKit.runtimeconfig.json" />
   </ItemGroup>
 
   <ItemGroup>
@@ -138,12 +134,6 @@
     <EmbeddedResource Include="Resources\Xbox and Contrller.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources\XboxOGKit.deps.json" />
-    <EmbeddedResource Include="Resources\XboxOGKit.dll" />
-    <EmbeddedResource Include="Resources\XboxOGKit.dll.config" />
-    <EmbeddedResource Include="Resources\XboxOGKit.exe" />
-    <EmbeddedResource Include="Resources\XboxOGKit.pdb" />
-    <EmbeddedResource Include="Resources\XboxOGKit.runtimeconfig.json" />
   </ItemGroup>
 
   <ItemGroup>
