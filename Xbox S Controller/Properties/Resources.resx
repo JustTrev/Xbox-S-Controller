@@ -118,47 +118,113 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="wdi-simple" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wdi-simple.exe;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="OpenTK.Compute" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OpenTK.Compute.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Xbox OG Keyboard Arrow KeyUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Xbox OG Keyboard Arrow KeyUp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="XboxOGKit_runtimeconfig" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\XboxOGKit.runtimeconfig.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="libusb-1.0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\libusb-1.0.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="OpenTK.Windowing.GraphicsLibraryFramework" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OpenTK.Windowing.GraphicsLibraryFramework.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Xb2XInput1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Xb2XInput.exe;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="XboxOGKit1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\XboxOGKit.exe;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BlankFormWIndow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BlankFormWIndow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DeltaCompressionDotNet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DeltaCompressionDotNet.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SharpCompress" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SharpCompress.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="README" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\README.md;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="Controller Installer Shield Design" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Controller Installer Shield Design.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Dash plus Controller Installer Shield Design" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Dash plus Controller Installer Shield Design.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Dashboard Installer Shield Design" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Dashboard Installer Shield Design.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="SharpDX" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SharpDX.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Xbox and Contrller" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Xbox and Contrller.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="XboxOGKit_dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\XboxOGKit.dll.config;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
-  <data name="libusb-1.0" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\libusb-1.0.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="SharpDX.RawInput" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SharpDX.RawInput.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="README" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\README.md;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Mono.Cecil.Mdb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mono.Cecil.Mdb.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="ViGEmBus_1.21.442_x64_x86_arm64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ViGEmBus_1.21.442_x64_x86_arm64.exe;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="wdi-simple" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\wdi-simple.exe;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Xb2XInput" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Xb2XInput.ini;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
-  </data>
-  <data name="Xb2XInput1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Xb2XInput.exe;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Installer Shield Design 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Installer Shield Design 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="install drivers" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\install drivers.bat;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
-  <data name="DeltaCompressionDotNet" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DeltaCompressionDotNet.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="XboxOGKit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\XboxOGKit.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DeltaCompressionDotNet.PatchApi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DeltaCompressionDotNet.PatchApi.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Mono.Cecil.Rocks" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mono.Cecil.Rocks.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PInvoke.Windows.Core" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PInvoke.Windows.Core.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="OpenTK.Mathematics" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OpenTK.Mathematics.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Dashboard Installer Shield Design" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dashboard Installer Shield Design.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mono.Cecil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mono.Cecil.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="OpenTK.Windowing.Common" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OpenTK.Windowing.Common.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="XboxOGKit_deps" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\XboxOGKit.deps.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="OpenTK.Windowing.Desktop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OpenTK.Windowing.Desktop.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="OpenTK.Graphics" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OpenTK.Graphics.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="System.CodeDom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\System.CodeDom.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SharpDX.XInput" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SharpDX.XInput.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="DeltaCompressionDotNet.MsDelta" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DeltaCompressionDotNet.MsDelta.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="DeltaCompressionDotNet.PatchApi" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DeltaCompressionDotNet.PatchApi.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="System.Management" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\System.Management.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Xb2XInput" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Xb2XInput.ini;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
   <data name="Microsoft.VisualStudio.Interop" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Microsoft.VisualStudio.Interop.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -166,82 +232,28 @@
   <data name="Microsoft.VisualStudio.OLE.Interop" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Microsoft.VisualStudio.OLE.Interop.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Mono.Cecil" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Mono.Cecil.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Mono.Cecil.Mdb" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Mono.Cecil.Mdb.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Mono.Cecil.Pdb" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Mono.Cecil.Pdb.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Mono.Cecil.Rocks" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Mono.Cecil.Rocks.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="OpenTK.Compute" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\OpenTK.Compute.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="OpenTK.Core" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\OpenTK.Core.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="OpenTK.Graphics" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\OpenTK.Graphics.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="OpenTK.Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\OpenTK.Input.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="OpenTK.Mathematics" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\OpenTK.Mathematics.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="XboxOGKit2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\XboxOGKit.pdb;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="OpenTK.OpenAL" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\OpenTK.OpenAL.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="OpenTK.Windowing.Common" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\OpenTK.Windowing.Common.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OpenTK.Input" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OpenTK.Input.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="OpenTK.Windowing.Desktop" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\OpenTK.Windowing.Desktop.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Mono.Cecil.Pdb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mono.Cecil.Pdb.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="OpenTK.Windowing.GraphicsLibraryFramework" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\OpenTK.Windowing.GraphicsLibraryFramework.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OpenTK.Core" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OpenTK.Core.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="PInvoke.Windows.Core" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PInvoke.Windows.Core.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="Xbox and Contrller" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Xbox and Contrller.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SharpCompress" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SharpCompress.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="ViGEmBus_1.21.442_x64_x86_arm64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ViGEmBus_1.21.442_x64_x86_arm64.exe;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="SharpDX" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SharpDX.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="SharpDX.RawInput" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SharpDX.RawInput.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="SharpDX.XInput" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SharpDX.XInput.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="System.CodeDom" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\System.CodeDom.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="System.Management" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\System.Management.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="XboxOGKit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\XboxOGKit.dll;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="XboxOGKit.deps" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\XboxOGKit.deps.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="XboxOGKit.dll" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\XboxOGKit.dll.config;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
-  </data>
-  <data name="XboxOGKit.runtimeconfig" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\XboxOGKit.runtimeconfig.json;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="XboxOGKit1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\XboxOGKit.exe;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="XboxOGKit2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\XboxOGKit.pdb;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="blankButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blankButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

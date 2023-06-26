@@ -63,6 +63,26 @@ namespace Xbox_S_Controller.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap blankButton {
+            get {
+                object obj = ResourceManager.GetObject("blankButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap BlankFormWIndow {
+            get {
+                object obj = ResourceManager.GetObject("BlankFormWIndow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Controller_Installer_Shield_Design {
             get {
                 object obj = ResourceManager.GetObject("Controller Installer Shield Design", resourceCulture);
@@ -148,6 +168,16 @@ namespace Xbox_S_Controller.Properties {
         public static string install_drivers {
             get {
                 return ResourceManager.GetString("install drivers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Installer_Shield_Design_2 {
+            get {
+                object obj = ResourceManager.GetObject("Installer Shield Design 2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -448,6 +478,16 @@ namespace Xbox_S_Controller.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Xbox_OG_Keyboard_Arrow_KeyUp {
+            get {
+                object obj = ResourceManager.GetObject("Xbox OG Keyboard Arrow KeyUp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         public static byte[] XboxOGKit {
@@ -462,7 +502,7 @@ namespace Xbox_S_Controller.Properties {
         /// </summary>
         public static byte[] XboxOGKit_deps {
             get {
-                object obj = ResourceManager.GetObject("XboxOGKit.deps", resourceCulture);
+                object obj = ResourceManager.GetObject("XboxOGKit_deps", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -477,7 +517,7 @@ namespace Xbox_S_Controller.Properties {
         /// </summary>
         public static string XboxOGKit_dll {
             get {
-                return ResourceManager.GetString("XboxOGKit.dll", resourceCulture);
+                return ResourceManager.GetString("XboxOGKit_dll", resourceCulture);
             }
         }
         
@@ -486,7 +526,7 @@ namespace Xbox_S_Controller.Properties {
         /// </summary>
         public static byte[] XboxOGKit_runtimeconfig {
             get {
-                object obj = ResourceManager.GetObject("XboxOGKit.runtimeconfig", resourceCulture);
+                object obj = ResourceManager.GetObject("XboxOGKit_runtimeconfig", resourceCulture);
                 return ((byte[])(obj));
             }
         }
